@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'EF_jejudoldam';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TJJoyofsingingM_TTF";
+    src: url("/font/TJJoyofsingingM_TTF.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TJJoyofsingingL_TTF";
+    src: url("/font/TJJoyofsingingL_TTF.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "TJ Joy of singing TTF";
+}
+html {
+        scroll-behavior: smooth;
+}
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+        border-bottom: 1px solid #000;
+}
+
+header h1 {
+    font-family: 'EF_jejudoldam';
+    font-size: 40px;
+}
+header h1 img{
+    width: 200px;
+    height: 55px;
+}
+header > ul.category {
+    display: flex;
+    gap: 120px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.blind_web {
+    display: none;
+}
+header > ul.category > li {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    z-index: 10;
+}
+header > ul.category > li::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: -50%;
+    width: 100%;
+    height: 12px;
+    border-radius: 5px;
+    background: oklch(63.82% 0.17313 261.597 / 0.555);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+header > ul.category > li:hover::after {
+    display: block;
+    left: 0;
+    opacity: 1;
+}
+header > ul.category > li > a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    display: block;
+}
+header > ul.category > li > ul {
+    position: absolute;
+    top: 100%;   
+    left: -90px;
+    background: #fff;
+    width: 220px;
+    padding: 15px 20px;
+    text-align: center;
+    display: none; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    z-index: 100;
+}
+
+header > ul.category > li > ul li {
+    padding: 8px;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+header > ul.category > li > ul li:hover {
+    background: oklch(63.82% 0.17313 261.597 / 0.555);
+    border-radius: 5px;
+    color: #fff;
+}
+header > ul.category > li:hover > ul {
+    display: block;
+}
+header > ul.gnb {
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+    list-style: none;
+}
+header > ul.gnb li {
+    cursor: pointer;
+}
+
+header > a.menu {
+    display: none;
+}
+
+header>.gnb li:first-child {
+    background: url(../img/ico/planet.png) no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+header>.gnb li:nth-child(2) {
+    background: url(../img/ico/user.png) no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+header>.gnb li:nth-child(3) {
+    background: url(../img/ico/search.png) no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+header .menu {
+    display: none;
+    height: 100%;
+    padding: 0 25px;
+    transition: all 0.3s;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+.menu .item {
+    display: block;
+    background: #222;
+    width: 40px;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s;
+}
+.menu.on .item:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 2px;
+}
+.menu.on .item:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 1px;
+}
+.menu.on .item:nth-child(2) {
+    opacity: 0;
+    transition: all 0.3s;
+}
+/* mainvisual */
+.mainVisual {
+    background: url(../img/healing/main_BG.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 632px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: -3;
+}
+.mainVisual::after {
+    content: '';
+    width: 100%;
+    height: 632px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: -2;
+}
+.mainVisual h2 {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: #fff;
+    font-weight: 500;
+    z-index: -1;
+}
+/* content */
+#content .inner h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+#content .inner ul {
+    display: flex;
+    justify-content: space-between;
+}
+#content .inner ul li img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 54px;
+}
+#content .inner > p {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+/* innerContent */
+.innerContent {
+    border-bottom: 1px solid #000;
+    margin-bottom: 100px;
+}
+.innerContent .mainTitle {
+    display: flex;
+    justify-content: flex-start;
+    gap: 135px;
+}
+.innerContent .mainTitle img {
+    width: 406px;
+    height: 533px;
+}
+.innerContent .mainTitle ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 60px 0;
+}
+
+.innerContent .mainTitle ul > li{
+    position: relative;
+    padding-left: 10px;
+}
+.innerContent .mainTitle ul > li:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/ico/ico_cal.png) no-repeat center/cover;
+    position: absolute;
+    left: -30px;
+    top: -2px;
+}
+.innerContent .mainTitle ul > li:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/ico/ico_money.png) no-repeat center/cover;
+    position: absolute;
+    left: -33px;
+    top: -4px;
+}
+.innerContent .mainTitle ul > li:nth-child(3)::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 31px;
+    background: url(../img/ico/ico_map.png) no-repeat center/cover;
+    position: absolute;
+    left: -28px;
+    top: -6px;
+}
+.innerContent .mainTitle ul > li:nth-child(4)::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../img/ico/ico_shout.png) no-repeat center/cover;
+    position: absolute;
+    left: -28px;
+    top: -4px;
+}
+.innerContent .mainTitle ul > li:nth-child(5)::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/ico/ico_phone-call.png) no-repeat center/cover;
+    position: absolute;
+    left: -26px;
+    top: -4px;
+}
+.innerContent > a {
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 18px 28px;
+    font-size: 20px;
+    width: 180px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 60px auto;
+}
+/* map */
+.map .inner{
+    padding-bottom: 120px;
+    border-bottom: 1px solid #000;
+}
+.map .mapContent h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+}
+.map .mapContent iframe {
+    display: block;
+    width: 70%;
+    height: 487px;
+    margin: 0 auto;
+}
+
+/* rest */
+.rest .inner h4 {
+    font-size: 30px;
+    margin-bottom: 48px;
+    margin-top: 100px;
+}
+.rest .inner ul {
+    display: flex;
+    justify-content: space-between;
+}
+.rest .inner {
+    border-bottom: 1px solid #000;
+    margin-bottom: 100px;
+}
+.rest .inner ul li ul li {
+    margin-bottom: 140px;
+}
+.rest .inner ul li ul li p{
+    font-size: 22px;
+}
+.rest .inner ul li ul li img {
+    width: 400px;
+    height: 500px;
+    margin-bottom: 25px;
+}
+/* attr */
+.attr .inner h4 {
+    font-size: 30px;
+    margin-bottom: 48px;
+    margin-top: 100px;
+}
+.attr .inner ul {
+    display: flex;
+    justify-content: space-between;
+}
+.attr .inner {
+    margin-bottom: 100px;
+}
+.attr .inner ul li ul li {
+    margin-bottom: 140px;
+}
+.attr .inner ul li ul li p{
+    font-size: 22px;
+}
+.attr .inner ul li ul li img {
+    width: 400px;
+    height: 500px;
+    margin-bottom: 25px;
+}
+.arrow {
+    background: url(../img/ico/ico_up-arrow.png) no-repeat center/cover;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    right: 70px;
+    cursor: pointer;
+}

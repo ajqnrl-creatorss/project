@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 28px;
+    padding: 15px 0 15px 0px;
+}
+
+header {
+    height: 50px;
+}
+
+header>ul.gnb {
+    display: none;
+}
+
+header>ul:nth-child(2) {
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    display: none;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+}
+
+#category.on {
+    display: block;
+}
+
+.blind_web {
+    display: block;
+}
+
+header>ul.category {
+    gap: 0;
+    border-radius: 10px;
+    width: 180px;
+    right: 0;
+}
+
+header>ul.category li:nth-child(3) {
+    display: none;
+}
+
+header>ul.category>li>a.blind_mobile {
+    display: none;
+    border: none;
+}
+
+header>ul:nth-child(2)>li:nth-child(4) {
+    display: none;
+}
+
+.blind_web {
+    display: block;
+}
+
+header>ul.category>li {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header>ul:nth-child(2)>li {
+    padding: 5px 0px;
+    border-bottom: 1px solid #e4e4e4;
+    background: #fff;
+    z-index: 1000000;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+header>ul.category>li>a {
+    padding: 10px 0;
+}
+
+header>a.menu {
+    display: block;
+    height: 100px;
+    padding: 10px 20px 15px 20px;
+    transition: all 0.3s;
+}
+
+header>ul.category>li::after {
+    display: none;
+}
+
+#content .inner h3 {
+    padding-left: 20px;
+}
+
+#content .inner>p {
+    padding: 20px;
+}
+
+.more_pc_btn {
+    bottom: -850px;
+    right: 50px;
+}
+
+.innerContent>a {
+    margin-left: 95px;
+}
+
+.m_more {
+    display: block !important;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+.slideContent {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.innerContent {
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.innerContent .red {
+    display: none;
+}
+
+.innerContent .mainTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+}
+
+.innerContent .mainTitle img {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+    aspect-ratio: 380/500;
+    border-radius: 20px;
+    outline: 1px solid #fff;
+    outline-offset: 5px;
+    margin: 0 auto;
+}
+
+#content .innerContent .mainTitle ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px 0;
+    gap: 30px;
+    color: #000;
+}
+
+.innerContent .mainTitle ul > li {
+    position: relative;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.innerContent .mainTitle ul > li::after {
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    content: '';
+    background: #f2f2f7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.innerContent .mainTitle ul > li:first-child::before,
+.innerContent .mainTitle ul > li:nth-child(2)::before,
+.innerContent .mainTitle ul > li:nth-child(3)::before,
+.innerContent .mainTitle ul > li:nth-child(4)::before,
+.innerContent .mainTitle ul > li:nth-child(5)::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    z-index: 10;
+}
+
+.innerContent .mainTitle ul > li:first-child::before {
+    background: url(../img/ico/valentine_day.png) no-repeat center/contain;
+}
+
+.innerContent .mainTitle ul > li:nth-child(2)::before {
+    background: url(../img/ico/coin_ico.png) no-repeat center/contain;
+}
+
+.innerContent .mainTitle ul > li:nth-child(3)::before {
+    background: url(../img/ico/location_ico.png) no-repeat center/contain;
+}
+
+.innerContent .mainTitle ul > li:nth-child(4)::before {
+    background: url(../img/ico/megaphone_ico.png) no-repeat center/contain;
+}
+
+.innerContent .mainTitle ul > li:nth-child(5)::before {
+    background: url(../img/ico/call_ico.png) no-repeat center/contain;
+}
+
+.innerContent > a {
+    display: block;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: auto;
+    max-width: 280px;
+    text-align: center;
+    font-weight: 500;
+    background: #fff;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #000;
+}
+.m_more .block {
+    display: block;
+    margin-top: 10px;
+}
+#content .inner ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+#content .inner ul li img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+#content .inner h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content .inner {
+    padding: 0 15px;
+}
+
+
+.rest .inner h4 {
+    padding: 20px;
+}
+
+.rest .inner>ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rest .inner ul li ul li figure {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.rest .inner ul li ul li p {
+    font-size: 18px;
+}
+
+.rest .inner h4 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.rest .inner {
+    margin-bottom: 50px;
+}
+
+.attr .inner>ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.attr .inner ul li ul li figure {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.attr .inner ul li ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attr .inner ul li ul li p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.attr .inner h4 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.attr .inner {
+    margin-bottom: 50px;
+}
+
+.youtube h2 {
+    font-size: 28px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.youtube p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.youtube .videoGroup {
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.youtube .videoGroup iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+}

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너영나영</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/youandi.css">
+    <link rel="stylesheet" href="css/youandi_mobile.css" media="screen and (max-width:430px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/41c6ccdec2.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/youandi.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <section id="mainSection">
+            <header>
+                <a href="index.html">
+                    <h1><img src="img/logo/logo.png" alt=""></h1>
+                </a>
+                <ul class="category">
+                    <li class="blind_web"><a href="subpage01.html">휴애리 유럽 수국축제</a></li>
+                    <li class="blind_web"><a href="tour.html">여행코스추천</a></li>
+                    <li>
+                        <a href="subpage01.html" class="blind_mobile">제주 여행</a>
+                        <ul>
+                            <li><a href="subpage01.html">휴애리 유럽 수국축제</a></li>
+                            <li><a href="tour.html">여행코스추천</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#activity">액티비티</a></li>
+                    <li><a href="#accom">숙박</a></li>
+                    <li><a href="#map">맛집여지도</a></li>
+                </ul>
+                <ul class="gnb">
+                    <li><span class="blind lan"></span></li>
+                    <li><span class="blind myPage"></span></li>
+                    <li><span class="blind search"></span></li>
+                </ul>
+                <a href="#" class="menu">
+                    <span class="item"></span>
+                    <span class="item"></span>
+                    <span class="item"></span>
+                </a>
+            </header>
+            <div class="mainVisual">
+                <div class="mainVisualEvent">
+                    <div class="mainTitle">
+                        <h2>메가얼리버드</h2>
+                        <p>8월 22일, 연중 최대 할인이 시작됩니다.</p>
+                    </div>
+                    <video loop muted autoplay>
+                        <source src="video/mainVisual_bg2.mp4">
+                    </video>
+                </div>
+                <div class="mainVisualBooking">
+                    <div class="inner">
+                        <div class="top">
+                            <ul>
+                                <li class="on"><span class="indicator"></span><span>왕복</span></li>
+                                <li>편도</li>
+                                <li>다구간</li>
+
+                            </ul>
+                            <ul class="mobile">
+                                <li>왕복</li>
+                                <li>편도</li>
+                                <li>다구간</li>
+                            </ul>
+                            <div class="check">
+                                <p><span class="blind">단체 항공권 선택박스</span></p>
+                                <p>단체(10명이상)</p>
+                                <div class="questionMark">
+                                    <input type="text" placeholder="할인코드 입력" name="dc"></input>
+                                    <span>?</span>
+                                    <div class="tooltip">
+                                        <h4>할인코드란?</h4>
+                                        <em>할인코드를 입력하시면 할인이 적용됩니다.</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="start">
+                                <p>출발지 선택</p>
+                                <div id="departureDropdown">
+                                    <img src="img/ico/ico_take_off.png" alt="출발">
+                                    <p id="departureBtn">출발</p>
+                                    <img src="img/ico/ico_arrow.png" alt="더보기">
+                                </div>
+                                <div class="inputBox departureBox">
+                                    <ul id="dropdown-start div">
+                                        <li value="서울/인천">서울/인천 <span>ICN</span></li>
+                                        <li value="서울/김포">서울/김포 <span>GMP</span></li>
+                                        <li value="제주">제주 <span>CJU</span></li>
+                                        <li value="대구">대구 <span>TAE</span></li>
+                                        <li value="청주">청주 <span>CJJ</span></li>
+                                        <li value="광주">광주 <span>KWJ</span></li>
+                                        <li value="부산/김해">부산/김해 <span>PUS</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change"><img src="img/ico/ico_exchange.png" alt="체인지버튼"></div>
+                            <div class="end">
+                                <p>도착지 선택</p>
+                                <div id="endDropdown">
+                                    <img src="img/ico/ico_landing.png" alt="도착">
+                                    <p id="endBtn">도착</p>
+                                    <img src="img/ico/ico_arrow.png" alt="더보기">
+                                </div>
+                                <div class="inputBox endBox">
+                                    <ul id="dropdown-end div">
+                                        <li value="서울/인천">서울/인천 <span>ICN</span></li>
+                                        <li value="서울/김포">서울/김포 <span>GMP</span></li>
+                                        <li value="제주">제주 <span>CJU</span></li>
+                                        <li value="대구">대구 <span>TAE</span></li>
+                                        <li value="청주">청주 <span>CJJ</span></li>
+                                        <li value="광주">광주 <span>KWJ</span></li>
+                                        <li value="부산/김해">부산/김해 <span>PUS</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="day">
+                                <img src="img/ico/ico_day.png" alt="달력">
+                                <span class="go dateInput" id="startDate">가는 날</span>
+                                <p>~</p>
+                                <span class="coming dateInput" id="endDate">오는 날</span>
+                                <!-- 달력 -->
+                                <div class="cal">
+                                    <div class="aug">
+                                        <table>
+                                            <caption>8월</caption>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                            <tr>
+                                                <span>
+                                                    <td data-date="2025-07-27">27</td>
+                                                    <td data-date="2025-07-28">28</td>
+                                                    <td data-date="2025-07-29">29</td>
+                                                    <td data-date="2025-07-30">30</td>
+                                                    <td data-date="2025-07-31">31</td>
+                                                </span>
+                                                <td data-date="2025-08-01">1</td>
+                                                <td data-date="2025-08-02">2</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-03">3</td>
+                                                <td data-date="2025-08-04">4</td>
+                                                <td data-date="2025-08-05">5</td>
+                                                <td data-date="2025-08-06">6</td>
+                                                <td data-date="2025-08-07">7</td>
+                                                <td data-date="2025-08-08">8</td>
+                                                <td data-date="2025-08-09">9</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-10">10</td>
+                                                <td data-date="2025-08-11">11</td>
+                                                <td data-date="2025-08-12">12</td>
+                                                <td data-date="2025-08-13">13</td>
+                                                <td data-date="2025-08-14">14</td>
+                                                <td data-date="2025-08-15">15</td>
+                                                <td data-date="2025-08-16">16</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-17">17</td>
+                                                <td data-date="2025-08-18">18</td>
+                                                <td data-date="2025-08-19">19</td>
+                                                <td data-date="2025-08-20">20</td>
+                                                <td data-date="2025-08-21">21</td>
+                                                <td data-date="2025-08-22">22</td>
+                                                <td data-date="2025-08-23">23</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-24">24</td>
+                                                <td data-date="2025-08-25">25</td>
+                                                <td data-date="2025-08-26">26</td>
+                                                <td data-date="2025-08-27">27</td>
+                                                <td data-date="2025-08-28">28</td>
+                                                <td data-date="2025-08-29">29</td>
+                                                <td data-date="2025-08-30">30</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-31">31</td>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="sep">
+                                        <table>
+                                            <caption>9월</caption>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                            <tr>
+                                                <span>
+                                                    <td data-date="2025-08-31">31</td>
+                                                </span>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-07">7</td>
+                                                <td data-date="2025-09-08">8</td>
+                                                <td data-date="2025-09-09">9</td>
+                                                <td data-date="2025-09-10">10</td>
+                                                <td data-date="2025-09-11">11</td>
+                                                <td data-date="2025-09-12">12</td>
+                                                <td data-date="2025-09-13">13</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-14">14</td>
+                                                <td data-date="2025-09-15">15</td>
+                                                <td data-date="2025-09-16">16</td>
+                                                <td data-date="2025-09-17">17</td>
+                                                <td data-date="2025-09-18">18</td>
+                                                <td data-date="2025-09-19">19</td>
+                                                <td data-date="2025-09-20">20</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-21">21</td>
+                                                <td data-date="2025-09-22">22</td>
+                                                <td data-date="2025-09-23">23</td>
+                                                <td data-date="2025-09-24">24</td>
+                                                <td data-date="2025-09-25">25</td>
+                                                <td data-date="2025-09-26">26</td>
+                                                <td data-date="2025-09-27">27</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-28">28</td>
+                                                <td data-date="2025-09-29">29</td>
+                                                <td data-date="2025-09-30">30</td>
+                                                <span>
+                                                    <td data-date="2025-10-01">1</td>
+                                                    <td data-date="2025-10-02">2</td>
+                                                    <td data-date="2025-10-03">3</td>
+                                                    <td data-date="2025-10-04">4</td>
+                                                </span>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-31">31</td>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 달력2 -->
+                                <div class="cal2">
+                                    <div class="aug2">
+                                        <table>
+                                            <caption>8월</caption>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                            <tr>
+                                                <span>
+                                                    <td data-date="2025-07-27">27</td>
+                                                    <td data-date="2025-07-28">28</td>
+                                                    <td data-date="2025-07-29">29</td>
+                                                    <td data-date="2025-07-30">30</td>
+                                                    <td data-date="2025-07-31">31</td>
+                                                </span>
+                                                <td data-date="2025-08-01">1</td>
+                                                <td data-date="2025-08-02">2</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-03">3</td>
+                                                <td data-date="2025-08-04">4</td>
+                                                <td data-date="2025-08-05">5</td>
+                                                <td data-date="2025-08-06">6</td>
+                                                <td data-date="2025-08-07">7</td>
+                                                <td data-date="2025-08-08">8</td>
+                                                <td data-date="2025-08-09">9</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-10">10</td>
+                                                <td data-date="2025-08-11">11</td>
+                                                <td data-date="2025-08-12">12</td>
+                                                <td data-date="2025-08-13">13</td>
+                                                <td data-date="2025-08-14">14</td>
+                                                <td data-date="2025-08-15">15</td>
+                                                <td data-date="2025-08-16">16</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-17">17</td>
+                                                <td data-date="2025-08-18">18</td>
+                                                <td data-date="2025-08-19">19</td>
+                                                <td data-date="2025-08-20">20</td>
+                                                <td data-date="2025-08-21">21</td>
+                                                <td data-date="2025-08-22">22</td>
+                                                <td data-date="2025-08-23">23</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-24">24</td>
+                                                <td data-date="2025-08-25">25</td>
+                                                <td data-date="2025-08-26">26</td>
+                                                <td data-date="2025-08-27">27</td>
+                                                <td data-date="2025-08-28">28</td>
+                                                <td data-date="2025-08-29">29</td>
+                                                <td data-date="2025-08-30">30</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-31">31</td>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="sep2">
+                                        <table>
+                                            <caption>9월</caption>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                            <tr>
+                                                <span>
+                                                    <td data-date="2025-08-31">31</td>
+                                                </span>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-07">7</td>
+                                                <td data-date="2025-09-08">8</td>
+                                                <td data-date="2025-09-09">9</td>
+                                                <td data-date="2025-09-10">10</td>
+                                                <td data-date="2025-09-11">11</td>
+                                                <td data-date="2025-09-12">12</td>
+                                                <td data-date="2025-09-13">13</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-14">14</td>
+                                                <td data-date="2025-09-15">15</td>
+                                                <td data-date="2025-09-16">16</td>
+                                                <td data-date="2025-09-17">17</td>
+                                                <td data-date="2025-09-18">18</td>
+                                                <td data-date="2025-09-19">19</td>
+                                                <td data-date="2025-09-20">20</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-21">21</td>
+                                                <td data-date="2025-09-22">22</td>
+                                                <td data-date="2025-09-23">23</td>
+                                                <td data-date="2025-09-24">24</td>
+                                                <td data-date="2025-09-25">25</td>
+                                                <td data-date="2025-09-26">26</td>
+                                                <td data-date="2025-09-27">27</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-09-28">28</td>
+                                                <td data-date="2025-09-29">29</td>
+                                                <td data-date="2025-09-30">30</td>
+                                                <span>
+                                                    <td data-date="2025-10-01">1</td>
+                                                    <td data-date="2025-10-02">2</td>
+                                                    <td data-date="2025-10-03">3</td>
+                                                    <td data-date="2025-10-04">4</td>
+                                                </span>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-date="2025-08-31">31</td>
+                                                <td data-date="2025-09-01">1</td>
+                                                <td data-date="2025-09-02">2</td>
+                                                <td data-date="2025-09-03">3</td>
+                                                <td data-date="2025-09-04">4</td>
+                                                <td data-date="2025-09-05">5</td>
+                                                <td data-date="2025-09-06">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="passenger-box">
+                                <img src="img/ico/ico_user.png" alt="">
+                                <button id="passengerBtn" type="button">
+                                    성인 1 · 소아 0 · 유아 0
+                                </button>
+                                <div id="passengerPopup" class="popup hidden">
+                                    <div class="row">
+                                        <span>성인</span>
+                                        <button class="minus" data-type="adult">-</button>
+                                        <span id="adultCount">1</span>
+                                        <button class="plus" data-type="adult">+</button>
+                                    </div>
+                                    <div class="row">
+                                        <span>소아</span>
+                                        <button class="minus" data-type="child">-</button>
+                                        <span id="childCount">0</span>
+                                        <button class="plus" data-type="child">+</button>
+                                    </div>
+                                    <div class="row">
+                                        <span>유아</span>
+                                        <button class="minus" data-type="infant">-</button>
+                                        <span id="infantCount">0</span>
+                                        <button class="plus" data-type="infant">+</button>
+                                    </div>
+                                    <button id="closePopup">닫기</button>
+                                </div>
+                            </div>
+                            <button class="btnSearch">조회</button>
+                            <button id="btnSearch_mobile">항공권 조회</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+            <div class="swiper-area inner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner04.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner05.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner/banner06.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-wrapper">
+                    <!-- 화살표 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="activity">
+            <div class="inner">
+                <div class="title">
+                    <h2>심장이 <em>두근두근</em>, <strong>액티비티</strong> 시간!</h2>
+                    <p>제주 레저 BEST, 오늘 가장 인기 있는 곳</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/activity/runningman.jpg" alt="런닝맨 제주점">
+                            <div class="itemList">
+                                <h3>런닝맨 제주점</h3>
+                                <p>10% <span>17,100원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.8</em><strong> &#40;117&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/activity/cart.jpg" alt="감귤카트">
+                            <div class="itemList">
+                                <h3>감귤카트</h3>
+                                <p>50% <span>12,500원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.8</em><strong> &#40;12&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/activity/dynamic.jpg" alt="제주 다이나믹메이즈">
+                            <div class="itemList">
+                                <h3>제주 다이나믹메이즈</h3>
+                                <p>19% <span>16,000원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.8</em><strong> &#40;27&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/activity/iceMuseum.jpg" alt="아이스뮤지엄">
+                            <div class="itemList">
+                                <h3>&#91;특가&#93; 아이스뮤지엄</h3>
+                                <p>27% <span>10,400원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.5</em><strong> &#40;196&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="accom">
+            <div class="inner">
+                <div class="title">
+                    <h2>위치도, 분위기도 <span>완벽</span>하게</h2>
+                    <p>라이브 특가로 할인률 UP!</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/lodging/accommodation1.mp4.00_00_00_00.Still001.jpg" alt="스탠포드 호텔 제주">
+                                <video loop muted autoplay>
+                                    <source src="video/accommodation1.mp4">
+                                </video>
+                            </figure>
+                            <div class="itemList">
+                                <h3>스탠포드 호텔 제주</h3>
+                                <p>제주시 애월읍 &#124; 2~4명</p>
+                                <span>390,000원~</span>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.7</em><strong> &#40;408&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/lodging/accommodation2.mp4.00_00_00_00.Still001.jpg" alt="제주신화월드 호텔앤리조트">
+                                <video loop muted autoplay>
+                                    <source src="video/accommodation2.mp4">
+                                </video>
+                            </figure>
+                            <div class="itemList">
+                                <h3>제주신화월드 호텔앤리조트</h3>
+                                <p>서귀포시 안덕면 &#124; 2~4명</p>
+                                <p>3% <span>187,400원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.8</em><strong> &#40;1979&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/lodging/accommodation3.mp4.00_00_01_25.Still001.jpg" alt="그랜드 하얏트 제주">
+                                <video loop muted autoplay>
+                                    <source src="video/accommodation3.mp4">
+                                </video>
+                            </figure>
+                            <div class="itemList">
+                                <h3>그랜드 하얏트 제주</h3>
+                                <p>제주시 노형동 &#124; 2~4명</p>
+                                <p>15% <span>481,400원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.7</em><strong> &#40;1277&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/lodging/accommodation4.mp4.00_00_00_00.Still001.jpg" alt="제주 호텔 하루시다">
+                                <video loop muted autoplay>
+                                    <source src="video/accommodation4.mp4">
+                                </video>
+                            </figure>
+                            <div class="itemList">
+                                <h3>제주 호텔 하루시다</h3>
+                                <p>서귀포시 안덕면 &#124; 2~4명</p>
+                                <p>33% <span>400,000원~</span></p>
+                                <i class="fa-solid fa-star"></i>
+                                <em>4.8</em><strong> &#40;85&#41;</strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="map">
+            <div class="inner">
+                <h2>제주도젶맛집여지도</h2>
+                <p><span>찐 로컬맛집 모두 모였다!</span> 구역별로 나눠져있는 제주 맛집여지도, 지금 공개!</p>
+                <figure class="jeju">
+                    <img src="img/map/map1.png" alt="맛집여지도">
+                </figure>
+                <figure class="mapItem">
+                    <img src="img/map/cloud_left.png" alt="구름" class="cloudL">
+                    <img src="img/map/cloud_right.png" alt="구름" class="cloudR">
+                    <img src="img/map/femalediver.png" alt="해녀" class="diver">
+                    <img src="img/map/wave4.png" alt="파도" class="wave1">
+                    <img src="img/map/wave3.png" alt="파도" class="wave2">
+                    <img src="img/map/wave2.png" alt="파도" class="wave3">
+                    <img src="img/map/wave1.png" alt="파도" class="wave4">
+                    <img src="img/map/ship.png" alt="이주현배" class="ship">
+                </figure>
+            </div>
+        </section>
+        <section id="tabArea">
+            <div class="content">
+                <div class="tabInner">
+                    <ul class="tabMenu">
+                        <li class="on">전체</li>
+                        <li>동</li>
+                        <li>서</li>
+                        <li>남</li>
+                        <li>북</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabInner">
+                <p>25년 상반기 네이버 지도에서</p>
+                <strong>사람들이 많이 저장한</strong>
+                <h2 class="on">제주도 맛집 모음.ZIP</h2>
+                <h2>제주도 동쪽 맛집 TOP 8</h2>
+                <h2>제주도 서쪽 맛집 TOP 8</h2>
+                <h2>제주도 남쪽 맛집 TOP 8</h2>
+                <h2>제주도 북쪽 맛집 TOP 8</h2>
+                <p>집계기간 &#124; 2025.01.01~2025.08.21</p>
+            </div>
+            <div class="itemInner">
+                <ul class="tabListItem on">
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%AA%85%EC%A7%84%EC%A0%84%EB%B3%B5/place/17032617?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021016&locale=ko&svcName=map_pcv5&searchText=%EB%AA%85%EC%A7%84%EC%A0%84%EB%B3%B5"
+                            target="_blank">
+                            <img src="img/east/east_top_20_01.jpg" alt="명진전복">
+                            <h3>명진전복</h3>
+                            <p>전복요리, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EA%B3%B0%EB%A7%89%EC%8B%9D%EB%8B%B9/place/31204698?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021019&locale=ko&svcName=map_pcv5&searchText=%EA%B3%B0%EB%A7%89%EC%8B%9D%EB%8B%B9"
+                            target="_blank">
+                            <img src="img/east/east_top_20_02.jpg" alt="곰막식당">
+                            <h3>곰막식당</h3>
+                            <p>한식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%86%8C%EA%B8%88%EB%B0%94%EC%B9%98%EC%88%9C%EC%9D%B4%EB%84%A4/place/36690197?c=15.00,0,0,0,dh&isCorrectAnswer=true"
+                            target="_blank">
+                            <img src="img/east/east_top_20_03.jpg" alt="소금바치순이네">
+                            <h3>소금바치순이네</h3>
+                            <p>전복요리, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%A7%9B%EB%82%98%EC%8B%9D%EB%8B%B9?c=15.00,0,0,0,dh"
+                            target="_blank">
+                            <img src="img/east/east_top_20_04.jpg" alt="맛나식당">
+                            <h3>맛나식당</h3>
+                            <p>한식, 서귀포시 성산읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%B9%98%EC%A0%80%EC%8A%A4/place/38553022?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021036&locale=ko&svcName=map_pcv5&searchText=%EC%B9%98%EC%A0%80%EC%8A%A4"
+                            target="_blank">
+                            <img src="img/east/east_top_20_05.jpg" alt="치저스">
+                            <h3>치저스</h3>
+                            <p>양식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/13467718?placePath=%2Fhome&c=15.00,0,0,0,dh"
+                            target="_blank">
+                            <img src="img/east/east_top_20_06.jpg" alt="상춘재">
+                            <h3>상춘재</h3>
+                            <p>해물 &middot; 생선요리, 제주시 조천읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1177301296?placePath=%2Fhome" target="_blank">
+                            <img src="img/east/east_top_20_07.jpg" alt="고집돌우럭 함덕점">
+                            <h3>고집돌우럭 함덕점</h3>
+                            <p>향토음식, 제주시 조천읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/east/east_top_20_08.jpg" alt="세컨드스토리">
+                            <h3>세컨드스토리</h3>
+                            <p>이탈리아음식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/13434137?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_01.jpg" alt="미영이네식당">
+                            <h3>미영이네식당</h3>
+                            <p>생선회, 서귀포시 대정읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1374828905?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_02.jpg" alt="제주광해 애월">
+                            <h3>제주광해 애월</h3>
+                            <p>향토음식, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/36823910?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_03.jpg" alt="협재수우동 협재점">
+                            <h3>협재수우동 협재점</h3>
+                            <p>일식당, 제주시 한림읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%95%A0%EC%9B%94%EC%9D%80%ED%98%9C%EC%A0%84%EB%B3%B5/place/38704266?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EC%95%A0%EC%9B%94%EC%9D%80%ED%98%9C%EC%A0%84%EB%B3%B5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_04.jpg" alt="애월은혜전복">
+                            <h3>애월은혜전복</h3>
+                            <p>전복요리, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%85%B8%EB%9D%BC%EB%B0%94/place/37438036?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EB%85%B8%EB%9D%BC%EB%B0%94"
+                            target="_blank">
+                            <img src="img/west/west_top_20_05.jpg" alt="노라바">
+                            <h3>노라바</h3>
+                            <p>라면, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%9A%B1%EB%94%B4%EC%A7%80/place/16870210?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EB%9A%B1%EB%94%B4%EC%A7%80"
+                            target="_blank">
+                            <img src="img/west/west_top_20_06.jpg" alt="뚱딴지 애월본점">
+                            <h3>뚱딴지 애월본점</h3>
+                            <p>한식, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/34635305?c=16.33,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021046&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_07.jpg" alt="한림칼국수 제주본점">
+                            <h3>한림칼국수 제주본점</h3>
+                            <p>칼국수 &middot; 만두, 제주시 한림읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/19872990?c=16.33,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021046&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_08.jpg" alt="이춘옥원조 고등어쌈밥">
+                            <h3>이춘옥원조 고등어쌈밥</h3>
+                            <p>쌈밥, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%98%A4%EB%8A%94%EC%A0%95%EA%B9%80%EB%B0%A5/place/1011125170?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021047&locale=ko&svcName=map_pcv5&searchText=%EC%98%A4%EB%8A%94%EC%A0%95%EA%B9%80%EB%B0%A5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_01.jpg" alt="오는정김밥">
+                            <h3>오는정김밥</h3>
+                            <p>한식, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1146342571?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021047&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_02.jpg" alt="숙성도 중문점">
+                            <h3>숙성도 중문점</h3>
+                            <p>돼지고기구이, 서귀포시 색달동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/766197218?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021047&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_03.jpg" alt="고집돌우럭 중문">
+                            <h3>고집돌우럭 중문</h3>
+                            <p>한식, 서귀포시 색달동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%97%B0%EB%8F%88/place/1142108083?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021048&locale=ko&svcName=map_pcv5&searchText=%EC%97%B0%EB%8F%88"
+                            target="_blank">
+                            <img src="img/south/south_top_20_04.jpg" alt="연돈">
+                            <h3>연돈</h3>
+                            <p>돈가스, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1483222410?c=12.31,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021048&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_05.jpg" alt="제주 판타스틱버거">
+                            <h3>제주 판타스틱버거</h3>
+                            <p>햄버거, 서귀포시 표선면</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%A4%91%EB%AC%B8%EC%88%98%EB%91%90%EB%A6%AC%EB%B3%B4%EB%A7%90%EC%B9%BC%EA%B5%AD%EC%88%98/place/1296235294?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021048&locale=ko&svcName=map_pcv5&searchText=%EC%A4%91%EB%AC%B8%EC%88%98%EB%91%90%EB%A6%AC%EB%B3%B4%EB%A7%90%EC%B9%BC%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/south/south_top_20_06.jpg" alt="중문수두리보말칼국수">
+                            <h3>중문수두리보말칼국수</h3>
+                            <p>칼국수 &middot; 만두, 서귀포시 중문동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%AA%A8%EB%A3%A8%EC%BF%A0%EB%8B%A4/place/1660357714?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021049&locale=ko&svcName=map_pcv5&searchText=%EB%AA%A8%EB%A3%A8%EC%BF%A0%EB%8B%A4"
+                            target="_blank">
+                            <img src="img/south/south_top_20_07.jpg" alt="모루쿠다">
+                            <h3>모루쿠다</h3>
+                            <p>일식당, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%B6%98%EC%8B%AC%EC%9D%B4%EB%84%A4%20%EB%B3%B8%EC%A0%90/place/31660729?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%B6%98%EC%8B%AC%EC%9D%B4%EB%84%A4%20%EB%B3%B8%EC%A0%90"
+                            target="_blank">
+                            <img src="img/south/south_top_20_08.jpg" alt="춘심이네 본점">
+                            <h3>춘심이네 본점</h3>
+                            <p>해물 &middot; 서귀포시 안덕면</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9A%B0%EC%A7%84%ED%95%B4%EC%9E%A5%EA%B5%AD/place/13418405?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%9A%B0%EC%A7%84%ED%95%B4%EC%9E%A5%EA%B5%AD"
+                            target="_blank">
+                            <img src="img/north/north_top_20_01.jpg" alt="우진해장국">
+                            <h3>우진해장국</h3>
+                            <p>향토음식, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%88%99%EC%84%B1%EB%8F%84/place/1249805999?c=13.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%88%99%EC%84%B1%EB%8F%84"
+                            target="_blank">
+                            <img src="img/north/north_top_20_02.jpg" alt="숙성도 노형본관">
+                            <h3>숙성도 노형본관</h3>
+                            <p>돼지고기구이, 제주시 노형동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9E%90%EB%A7%A4%EA%B5%AD%EC%88%98/place/37060300?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021051&locale=ko&svcName=map_pcv5&searchText=%EC%9E%90%EB%A7%A4%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_03.jpg" alt="자매국수">
+                            <h3>자매국수</h3>
+                            <p>국수, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9D%BC%ED%86%B5%EC%9D%B4%EB%B0%98/place/32041782?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021051&locale=ko&svcName=map_pcv5&searchText=%EC%9D%BC%ED%86%B5%EC%9D%B4%EB%B0%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_04.jpg" alt="일통이반">
+                            <h3>일통이반</h3>
+                            <p>해물 &middot; 생선요리, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%98%AC%EB%9E%98%EA%B5%AD%EC%88%98/place/11866447?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021052&locale=ko&svcName=map_pcv5&searchText=%EC%98%AC%EB%9E%98%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_05.jpg" alt="올래국수">
+                            <h3>올래국수</h3>
+                            <p>국수, 제주시 연동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%EC%97%90%EA%B0%80%EB%A9%B4/place/1264748638?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%EC%A0%9C%EC%A3%BC%EC%97%90%EA%B0%80%EB%A9%B4"
+                            target="_blank">
+                            <img src="img/north/north_top_20_06.jpg" alt="제주에가면">
+                            <h3>제주에가면</h3>
+                            <p>한식, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%ED%9A%8C%EC%8B%AC/place/1904590988?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%ED%9A%8C%EC%8B%AC"
+                            target="_blank">
+                            <img src="img/north/north_top_20_07.jpg" alt="회심">
+                            <h3>회심</h3>
+                            <p>우동 &middot; 소바, 제주시 영평동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%8F%84%ED%86%A0%EB%A6%AC%ED%82%A4%EC%B9%9C/place/223026237?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%EB%8F%84%ED%86%A0%EB%A6%AC%ED%82%A4%EC%B9%9C"
+                            target="_blank">
+                            <img src="img/north/north_top_20_08.jpg" alt="도토리키친 본점">
+                            <h3>도토리키친 본점</h3>
+                            <p>국수, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tabListItem">
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%AA%85%EC%A7%84%EC%A0%84%EB%B3%B5/place/17032617?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021016&locale=ko&svcName=map_pcv5&searchText=%EB%AA%85%EC%A7%84%EC%A0%84%EB%B3%B5"
+                            target="_blank">
+                            <img src="img/east/east_top_20_01.jpg" alt="명진전복">
+                            <h3>명진전복</h3>
+                            <p>전복요리, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EA%B3%B0%EB%A7%89%EC%8B%9D%EB%8B%B9/place/31204698?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021019&locale=ko&svcName=map_pcv5&searchText=%EA%B3%B0%EB%A7%89%EC%8B%9D%EB%8B%B9"
+                            target="_blank">
+                            <img src="img/east/east_top_20_02.jpg" alt="곰막식당">
+                            <h3>곰막식당</h3>
+                            <p>한식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%86%8C%EA%B8%88%EB%B0%94%EC%B9%98%EC%88%9C%EC%9D%B4%EB%84%A4/place/36690197?c=15.00,0,0,0,dh&isCorrectAnswer=true"
+                            target="_blank">
+                            <img src="img/east/east_top_20_03.jpg" alt="소금바치순이네">
+                            <h3>소금바치순이네</h3>
+                            <p>전복요리, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%A7%9B%EB%82%98%EC%8B%9D%EB%8B%B9?c=15.00,0,0,0,dh"
+                            target="_blank">
+                            <img src="img/east/east_top_20_04.jpg" alt="맛나식당">
+                            <h3>맛나식당</h3>
+                            <p>한식, 서귀포시 성산읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%B9%98%EC%A0%80%EC%8A%A4/place/38553022?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021036&locale=ko&svcName=map_pcv5&searchText=%EC%B9%98%EC%A0%80%EC%8A%A4"
+                            target="_blank">
+                            <img src="img/east/east_top_20_05.jpg" alt="치저스">
+                            <h3>치저스</h3>
+                            <p>양식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/13467718?placePath=%2Fhome&c=15.00,0,0,0,dh"
+                            target="_blank">
+                            <img src="img/east/east_top_20_06.jpg" alt="상춘재">
+                            <h3>상춘재</h3>
+                            <p>해물 &middot; 생선요리, 제주시 조천읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1177301296?placePath=%2Fhome" target="_blank">
+                            <img src="img/east/east_top_20_07.jpg" alt="고집돌우럭 함덕점">
+                            <h3>고집돌우럭 함덕점</h3>
+                            <p>향토음식, 제주시 조천읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/east/east_top_20_08.jpg" alt="세컨드스토리">
+                            <h3>세컨드스토리</h3>
+                            <p>이탈리아음식, 제주시 구좌읍</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tabListItem">
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/13434137?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_01.jpg" alt="미영이네식당">
+                            <h3>미영이네식당</h3>
+                            <p>생선회, 서귀포시 대정읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1374828905?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_02.jpg" alt="제주광해 애월">
+                            <h3>제주광해 애월</h3>
+                            <p>향토음식, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/36823910?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021042&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_03.jpg" alt="협재수우동 협재점">
+                            <h3>협재수우동 협재점</h3>
+                            <p>일식당, 제주시 한림읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%95%A0%EC%9B%94%EC%9D%80%ED%98%9C%EC%A0%84%EB%B3%B5/place/38704266?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EC%95%A0%EC%9B%94%EC%9D%80%ED%98%9C%EC%A0%84%EB%B3%B5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_04.jpg" alt="애월은혜전복">
+                            <h3>애월은혜전복</h3>
+                            <p>전복요리, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%85%B8%EB%9D%BC%EB%B0%94/place/37438036?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EB%85%B8%EB%9D%BC%EB%B0%94"
+                            target="_blank">
+                            <img src="img/west/west_top_20_05.jpg" alt="노라바">
+                            <h3>노라바</h3>
+                            <p>라면, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%9A%B1%EB%94%B4%EC%A7%80/place/16870210?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021043&locale=ko&svcName=map_pcv5&searchText=%EB%9A%B1%EB%94%B4%EC%A7%80"
+                            target="_blank">
+                            <img src="img/west/west_top_20_06.jpg" alt="뚱딴지 애월본점">
+                            <h3>뚱딴지 애월본점</h3>
+                            <p>한식, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/34635305?c=16.33,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021046&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_07.jpg" alt="한림칼국수 제주본점">
+                            <h3>한림칼국수 제주본점</h3>
+                            <p>칼국수 &middot; 만두, 제주시 한림읍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/19872990?c=16.33,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021046&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/west/west_top_20_08.jpg" alt="이춘옥원조 고등어쌈밥">
+                            <h3>이춘옥원조 고등어쌈밥</h3>
+                            <p>쌈밥, 제주시 애월읍</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tabListItem">
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%98%A4%EB%8A%94%EC%A0%95%EA%B9%80%EB%B0%A5/place/1011125170?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021047&locale=ko&svcName=map_pcv5&searchText=%EC%98%A4%EB%8A%94%EC%A0%95%EA%B9%80%EB%B0%A5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_01.jpg" alt="오는정김밥">
+                            <h3>오는정김밥</h3>
+                            <p>한식, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1146342571?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021047&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_02.jpg" alt="숙성도 중문점">
+                            <h3>숙성도 중문점</h3>
+                            <p>돼지고기구이, 서귀포시 색달동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/766197218?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021047&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_03.jpg" alt="고집돌우럭 중문">
+                            <h3>고집돌우럭 중문</h3>
+                            <p>한식, 서귀포시 색달동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%97%B0%EB%8F%88/place/1142108083?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021048&locale=ko&svcName=map_pcv5&searchText=%EC%97%B0%EB%8F%88"
+                            target="_blank">
+                            <img src="img/south/south_top_20_04.jpg" alt="연돈">
+                            <h3>연돈</h3>
+                            <p>돈가스, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/entry/place/1483222410?c=12.31,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021048&locale=ko&svcName=map_pcv5"
+                            target="_blank">
+                            <img src="img/south/south_top_20_05.jpg" alt="제주 판타스틱버거">
+                            <h3>제주 판타스틱버거</h3>
+                            <p>햄버거, 서귀포시 표선면</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%A4%91%EB%AC%B8%EC%88%98%EB%91%90%EB%A6%AC%EB%B3%B4%EB%A7%90%EC%B9%BC%EA%B5%AD%EC%88%98/place/1296235294?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021048&locale=ko&svcName=map_pcv5&searchText=%EC%A4%91%EB%AC%B8%EC%88%98%EB%91%90%EB%A6%AC%EB%B3%B4%EB%A7%90%EC%B9%BC%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/south/south_top_20_06.jpg" alt="중문수두리보말칼국수">
+                            <h3>중문수두리보말칼국수</h3>
+                            <p>칼국수 &middot; 만두, 서귀포시 중문동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%AA%A8%EB%A3%A8%EC%BF%A0%EB%8B%A4/place/1660357714?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021049&locale=ko&svcName=map_pcv5&searchText=%EB%AA%A8%EB%A3%A8%EC%BF%A0%EB%8B%A4"
+                            target="_blank">
+                            <img src="img/south/south_top_20_07.jpg" alt="모루쿠다">
+                            <h3>모루쿠다</h3>
+                            <p>일식당, 서귀포시 서귀동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%B6%98%EC%8B%AC%EC%9D%B4%EB%84%A4%20%EB%B3%B8%EC%A0%90/place/31660729?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%B6%98%EC%8B%AC%EC%9D%B4%EB%84%A4%20%EB%B3%B8%EC%A0%90"
+                            target="_blank">
+                            <img src="img/south/south_top_20_08.jpg" alt="춘심이네 본점">
+                            <h3>춘심이네 본점</h3>
+                            <p>해물 &middot; 서귀포시 안덕면</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tabListItem">
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9A%B0%EC%A7%84%ED%95%B4%EC%9E%A5%EA%B5%AD/place/13418405?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%9A%B0%EC%A7%84%ED%95%B4%EC%9E%A5%EA%B5%AD"
+                            target="_blank">
+                            <img src="img/north/north_top_20_01.jpg" alt="우진해장국">
+                            <h3>우진해장국</h3>
+                            <p>향토음식, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%88%99%EC%84%B1%EB%8F%84/place/1249805999?c=13.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021050&locale=ko&svcName=map_pcv5&searchText=%EC%88%99%EC%84%B1%EB%8F%84"
+                            target="_blank">
+                            <img src="img/north/north_top_20_02.jpg" alt="숙성도 노형본관">
+                            <h3>숙성도 노형본관</h3>
+                            <p>돼지고기구이, 제주시 노형동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9E%90%EB%A7%A4%EA%B5%AD%EC%88%98/place/37060300?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021051&locale=ko&svcName=map_pcv5&searchText=%EC%9E%90%EB%A7%A4%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_03.jpg" alt="자매국수">
+                            <h3>자매국수</h3>
+                            <p>국수, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%9D%BC%ED%86%B5%EC%9D%B4%EB%B0%98/place/32041782?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021051&locale=ko&svcName=map_pcv5&searchText=%EC%9D%BC%ED%86%B5%EC%9D%B4%EB%B0%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_04.jpg" alt="일통이반">
+                            <h3>일통이반</h3>
+                            <p>해물 &middot; 생선요리, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%98%AC%EB%9E%98%EA%B5%AD%EC%88%98/place/11866447?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021052&locale=ko&svcName=map_pcv5&searchText=%EC%98%AC%EB%9E%98%EA%B5%AD%EC%88%98"
+                            target="_blank">
+                            <img src="img/north/north_top_20_05.jpg" alt="올래국수">
+                            <h3>올래국수</h3>
+                            <p>국수, 제주시 연동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%EC%97%90%EA%B0%80%EB%A9%B4/place/1264748638?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%EC%A0%9C%EC%A3%BC%EC%97%90%EA%B0%80%EB%A9%B4"
+                            target="_blank">
+                            <img src="img/north/north_top_20_06.jpg" alt="제주에가면">
+                            <h3>제주에가면</h3>
+                            <p>한식, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%ED%9A%8C%EC%8B%AC/place/1904590988?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%ED%9A%8C%EC%8B%AC"
+                            target="_blank">
+                            <img src="img/north/north_top_20_07.jpg" alt="회심">
+                            <h3>회심</h3>
+                            <p>우동 &middot; 소바, 제주시 영평동</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://map.naver.com/p/search/%EB%8F%84%ED%86%A0%EB%A6%AC%ED%82%A4%EC%B9%9C/place/223026237?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202509021053&locale=ko&svcName=map_pcv5&searchText=%EB%8F%84%ED%86%A0%EB%A6%AC%ED%82%A4%EC%B9%9C"
+                            target="_blank">
+                            <img src="img/north/north_top_20_08.jpg" alt="도토리키친 본점">
+                            <h3>도토리키친 본점</h3>
+                            <p>국수, 제주시 삼도이동</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
